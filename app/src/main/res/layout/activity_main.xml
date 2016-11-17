@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:vstv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.wiky.vscrolltextviewdemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="8dp">
+
+        <com.wiky.vstextview.VScrollTextView
+            android:id="@+id/vScrollTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#ffffff"
+        android:padding="8dp">
+
+
+        <com.wiky.vstextview.VScrollTextView
+            android:id="@+id/vScrollTV1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            vstv:sleepTime="1000"
+            vstv:scrollOrientation="down"
+            vstv:textColor="#ff0000"
+            vstv:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
